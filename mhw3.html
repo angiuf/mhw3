@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>PizzaLivery</title>
+        <link rel="stylesheet" href="mhw3.css">
+        <meta name="viewport"content="width=device-width, initial-scale=1"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">     
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+        <script src="contents.js" defer charset="UTF-8"></script> 
+        <script src="script.js" defer charset="UTF-8"></script> 
+        <script src="birre_API.js" defer charset="UTF-8"></script>
+        <script src="edamam_API.js" defer charset="UTF-8"></script>  
+    </head>
+    <body>
+        <nav>
+            <div class='left'>
+                <h1 class='logo' id='logo_1'>PizzaLivery</h1>
+                <h1 class='logo' id='logo_2'>PL</h1>
+                <div id='links'>
+                    <a>Home</a>
+                    <a>Pizzerie</a>
+                    <a>Menu</a>                                                                    
+                </div>
+            </div>
+            <div class='right'>
+                <img src="images/cart_white.png">
+                <img src="images/account_logo_white.png" alt="logo">
+                <div class='point'></div>
+                <div class='point'></div>
+                <div class='point'></div>
+            </div>                
+        </nav>
+
+        <header>
+            <div id='header_center'>
+                <h1>Cerca qui pizze e pizzerie</h1>
+                <input type='text' id='search_box' placeholder="Cerca">
+                    
+            </div>
+              
+            <div class='overlay'></div>
+        </header>
+        <article>
+            <section id="lista_preferiti" class="hidden">
+                <h1>Pizzerie preferite</h1>
+                <div></div>
+            </section>
+            <h1>Tutte le pizzerie</h1>
+            <section id="lista_pizzerie">
+                
+            </section> 
+
+            <h1>Birre da accompagnare alla pizza consigliate da PunkAPI</h1>
+            <section id='birre'>
+               
+            </section>
+            
+            <section id='val_nutr'>
+                <form>
+                    <span id='val_nutr_tit'>Cerca i valori nutrizionali e gli ingredienti</span>
+                    <div>
+                        <input type='text' id='cerca_val_nutr' placeholder="Inserisci una pizza">
+                        <input type='submit' id='submit' value='Cerca'>
+                    </div>
+                </form>
+
+                <div id='nutr_cont'>
+                    
+                </div>
+
+
+            </section>
+        </article>
+
+            <footer>
+                <div class='footer_info'>
+                    Andrea Giuffrida<br>
+                    o46002237
+                </div>
+                <div class='footer_social'>
+                    <img src='images/facebook.png'>
+                    <img src='images/twitter.png'>
+                    <img src='images/instagram.png'>
+                </div>
+            </footer>
+        
+    </body>
+</html>
